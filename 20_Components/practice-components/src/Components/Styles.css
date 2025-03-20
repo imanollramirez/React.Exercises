@@ -1,0 +1,10 @@
+.alert:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+    border-color: rgb(180, 180, 180);
+    transform: translateY(-6.3px);
+    transition-duration: .4s;
+}
+
+.alert {
+    transition-duration: .4s;
+}
