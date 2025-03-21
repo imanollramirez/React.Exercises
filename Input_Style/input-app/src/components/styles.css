@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins';
+}
+
+h1{
+  color: white;
+  font-size: 5em;
+  text-align: center;  /* Ensures the title is centered */
+}
+
+.input {
+  font-family: 'Poppins';
+  margin: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #ffffffd8;
+  transition-duration: .8s;
+}
+
+.btn {
+  color: #0f0c29b2;
+  transition: all .6s;
+}
+
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 1px 5px 0px 0px #ffffff9c;
+  transition-duration: .8s;
+}
+
+.input:hover {
+  transform: translateY(-6px);
+  box-shadow: inset 1px 1px 2px 1px #ffffff9c;
+  transition-duration: .8s;
+}
