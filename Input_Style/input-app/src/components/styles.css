@@ -40,13 +40,27 @@ p{
 }
 
 .btn {
-  color: #0f0c29b2;
+  color: #dfdfdf;
   transition: all .6s;
+  margin: 2%;
+}
+
+.limpiar{
+    color: #000000;
+    transition: all .6s;
+    margin: 2%;
+    background-color: white;
 }
 
 .btn:hover {
   transform: translateY(-6px);
   box-shadow: 1px 5px 0px 0px #ffffff9c;
+  transition-duration: .8s;
+}
+
+.limpiar:hover {
+  transform: translateY(-6px);
+  box-shadow: 2px 7px 0px 0px #000000b7;
   transition-duration: .8s;
 }
 
