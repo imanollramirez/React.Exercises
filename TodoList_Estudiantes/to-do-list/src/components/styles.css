@@ -54,6 +54,24 @@ h1 {
     background-color: #0056b3;
 }
 
+.clear-button{
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff7b00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+        background-color: #ce6300;
+}
+
 h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
