@@ -3,7 +3,7 @@ import ProfilePic from '../profilePic.jpg'
 
 const Card = ({Name, Occupation, Description}) => {
     return(
-        <>
+        <div className='body'>
         <aside className="profile-card">
   <header>
     <a target="_blank" href="#">
@@ -52,7 +52,7 @@ const Card = ({Name, Occupation, Description}) => {
     </li>
   </ul>
 </aside>
-        </>
+        </div>
     )
 };
 

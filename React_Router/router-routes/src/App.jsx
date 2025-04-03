@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Route, Routes } from 'react-router';
-import './App.css'
 
 //Components
 import PersonalInformation from './pages/Card.jsx';
@@ -14,7 +13,9 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<PersonalInformation />} />
+        <Route path="/" element={<PersonalInformation Name= {"Imanol Ramírez"}
+      Occupation={"Student"}
+      Description={"I am guy who fell in love with computer's world. I Study at Ricaldone ITR, I'm 18 years old, i like cars and girls."}/>} />      
         <Route path="/input" element={<Input />} />
         <Route path="/to-do-list" element={<ToDoList />} />
         <Route path="/20_components" element={<Components />} />
