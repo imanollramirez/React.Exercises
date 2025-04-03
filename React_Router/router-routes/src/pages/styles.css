@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+.container-input{
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -40,7 +40,8 @@ p{
 }
 
 .btn {
-  color: #dfdfdf;
+  color: #000000;
+  background-color: white;
   transition: all .6s;
   margin: 2%;
 }
@@ -49,12 +50,17 @@ p{
     color: #000000;
     transition: all .6s;
     margin: 2%;
+    border-radius: 8%;
+    width: 70px;
+    height: 35px;
+    border: none;
     background-color: white;
 }
 
 .btn:hover {
   transform: translateY(-6px);
   box-shadow: 1px 5px 0px 0px #ffffff9c;
+  background-color: white;
   transition-duration: .8s;
 }
 

@@ -51,7 +51,7 @@ const Input = () => {
     }
 
     return(
-        <>
+        <div className='container-input'>
         <h1 className="title">Ingrese datos</h1>
 		<input placeholder="Numéro 1" className="input" value={num1} type="number" onChange={(e) => setNum1(e.target.value)}/>
 		<input placeholder="Número 2" className="input" value={num2} type="number" onChange={(e) => setNum2(e.target.value)}/><br />
@@ -62,7 +62,7 @@ const Input = () => {
         <br />
         <button className='limpiar' onClick={handleLimpiar}>Limpiar</button>
         <h2 className="resultado">{resultado !== null && <p>{resultado}</p>} </h2>
-        </>
+        </div>
     )
 };
 
