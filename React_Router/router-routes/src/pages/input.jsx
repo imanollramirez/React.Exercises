@@ -9,7 +9,7 @@ const Input = () => {
 
     const handleSumar = ( ) => {
         const suma = parseFloat(num1) + parseFloat(num2);
-        setResultado('Resultado' + suma)
+        setResultado('Resultado ' + suma)
 
         if(num1 === '' || num2 === '') {
             setResultado('Ingrese los números');
@@ -18,7 +18,7 @@ const Input = () => {
 
     const handledeRestar = ( ) => {
         const resta = parseFloat(num1) - parseFloat(num2);
-        setResultado('Resultado:' + resta)
+        setResultado('Resultado: ' + resta)
 
         if(num1 === '' || num2 === '') {
             setResultado('Ingrese los números');
@@ -27,7 +27,7 @@ const Input = () => {
 
     const handleMultiplicar = ( ) => {
         const multiplicar = parseFloat(num1) * parseFloat(num2);
-        setResultado('Resultado:' + multiplicar)
+        setResultado('Resultado: ' + multiplicar)
 
         if(num1 === '' || num2 === '') {
             setResultado('Ingrese los números');
@@ -36,7 +36,7 @@ const Input = () => {
 
     const handleDividir = ( ) => {
         const dividir = parseFloat(num1) / parseFloat(num2);
-        setResultado('Resultado:' + dividir)
+        setResultado('Resultado: ' + dividir)
 
         if(num1 === '' || num2 === '') {
             setResultado('Ingrese los números');
@@ -48,17 +48,19 @@ const Input = () => {
         setNum1('');
         setNum2('');
         setResultado(null);
-    }
+    }   
 
     return(
         <div className='container-input'>
         <h1 className="title">Ingrese datos</h1>
 		<input placeholder="Numéro 1" className="input" value={num1} type="number" onChange={(e) => setNum1(e.target.value)}/>
 		<input placeholder="Número 2" className="input" value={num2} type="number" onChange={(e) => setNum2(e.target.value)}/><br />
+        <div className="buttons">
         <button className='btn' onClick={handleSumar}>Sumar</button>
         <button className='btn' onClick={handledeRestar}>Restar</button>
         <button className='btn' onClick={handleMultiplicar}>Multiplicar</button>
         <button className='btn' onClick={handleDividir}>Dividir</button>
+        </div>
         <br />
         <button className='limpiar' onClick={handleLimpiar}>Limpiar</button>
         <h2 className="resultado">{resultado !== null && <p>{resultado}</p>} </h2>
